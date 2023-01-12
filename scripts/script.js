@@ -1,4 +1,4 @@
-let daynames = [
+let dayNames = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -23,9 +23,11 @@ let months = [
 ];
 
 let d = new Date();
-let dayName = daynames[d.getDay()];
+let dayName = dayNames[d.getDay()];
 let monthName = months[d.getMonth()];
-let fulldate = monthName + "/" 
+let fullDate = monthName + "/" 
 + d.getDate() + "/" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+let year = d.getFullYear();
 
-document.getElementById("currentdate").textContent = fulldate;
+document.getElementById("year").textContent = year;
+document.getElementById("currentDate").textContent = fullDate;
