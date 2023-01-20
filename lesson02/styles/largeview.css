@@ -23,6 +23,7 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
 }
 section {
+    overflow: hidden;
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px;
@@ -32,6 +33,8 @@ img {
     margin-top: 10px;
 }
 main h2 {
+    color: white;
+    padding: 5px;
     margin: auto;
     font-family:'Fjalla One', sans-serif;
     background-color: #184e77;
