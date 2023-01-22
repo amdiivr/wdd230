@@ -1,4 +1,7 @@
-/* structure of site  */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Mulish:wght@200&display=swap');
+
+/* STRUCTURE OF SITE  */
 
 * {
     margin: 0;
@@ -7,6 +10,7 @@
     background: #CAF0F8;
 }
 #head, footer {
+    font-family: 'Crimson Text', serif;
     background-color: #023E8A;
     display: flex;
     flex-flow: column;
@@ -21,7 +25,7 @@ footer {
 	margin: 0 auto;
 }
 
-/* Header design */
+/* HEADER DESIGN */
 
 #head img {
     width: 25%;
@@ -33,9 +37,10 @@ h1, h2 {
     padding: 15px;
 }
 
-/* Menu design */
+/* MENU DESIGN*/
 
 nav {
+    font-family: 'Crimson Text', serif;
     text-align: center;
     background: #0077B6;
     display: flex;
@@ -51,7 +56,7 @@ nav a {
     padding: 15px;
     font-size: 15px;
     text-decoration: none;
-    color :white
+    color : white;
 }
 nav a:hover {   
     margin: auto;
@@ -67,15 +72,18 @@ a:-webkit-any-link {
 main {
     color: white;
     padding-top: 0px;
+    padding-bottom: 15px;
 }
 section {
     padding-top: 15px;
 }
 section h3 {
+    font-family: 'Crimson Text', serif;
     background-color:#0077B6;
     padding: 5px;
 }
 section p {
+    font-family: 'Mulish', sans-serif;
     color:#03045E;
     padding-top: 15px;
 }
@@ -84,6 +92,13 @@ section img {
     width: 25%;
     border-radius:50%;
 }
+hr {
+    border-color: #023E8A;
+}
+#color {
+    width: 50%;
+    border-radius: 50px;
+}
 
 /* FOOTER DESIGN */
 
@@ -91,11 +106,7 @@ footer {
     padding: 15px;
     font-weight: 700;
     color: white;
-    position: fixed;
-    bottom: 0;
-    left: 137px;
-    width: 960px;
 }
-footer p, h4 {
+footer p, h4, span {
     background-color: #023E8A;
 }

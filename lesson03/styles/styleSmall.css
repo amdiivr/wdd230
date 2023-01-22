@@ -1,0 +1,11 @@
+@media screen and (min-width: 400px) {
+
+    nav{
+        flex-direction: row;
+    }
+
+    nav a {
+		font-size: 15px;
+	}
+    
+}
