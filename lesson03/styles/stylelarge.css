@@ -40,9 +40,13 @@ h1, h2 {
 /* MENU DESIGN*/
 
 nav {
-    font-family: 'Crimson Text', serif;
-    text-align: center;
     background: #0077B6;
+    text-align: center;
+    box-shadow: 0 0 30px #333;
+    flex-flow: row;
+    font-family: 'Crimson Text', serif;
+}
+nav {
     display: flex;
     flex-direction: row;
 }
