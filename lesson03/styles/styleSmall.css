@@ -14,4 +14,13 @@
     main img {
         display: block;
     }
+
+    #color {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
 }
