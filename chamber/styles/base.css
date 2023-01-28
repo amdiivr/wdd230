@@ -80,3 +80,14 @@ header, footer {
     width: 30px;
     height: auto;
 }
+.date {
+    font-family: 'Crimson Text', serif;
+    background-color: #0077B6;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #023E8A;
+}
+
