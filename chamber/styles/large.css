@@ -1,0 +1,62 @@
+@media only screen and (min-width: 280px) and (max-width: 414px){
+    /* NAV LARGE DESIGN */ 
+
+    nav {
+    margin: 0 auto;
+    background: #023E8A;
+    }
+    .navigation {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navigation li:first-child {
+        display: block;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 12px;
+        text-align: left;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(16px, 2vmin, 25px);
+    }
+    #menu::before {
+        content: "≡";
+        font-size: 32px;
+    }
+    .navigation a:hover, navigation a:active {
+        color: white;
+        background-color: black;
+    }
+    .responsive li {
+        display: block;
+    }
+    .responsive #menu::before {
+        content: "X";
+    }
+
+    /* LOGO AND H1 LARGE DESIGN */
+
+    #head img {
+        margin-left: auto;
+        width: 100%;
+    }
+    #head section h1{
+        font-size: 32px;
+        margin: 0;
+    }
+    #head section q {
+        letter-spacing: 1.5pt;
+        font-size: 14px;
+    }
+    #socialMedia img {
+        margin: auto;
+        width: 100%;
+    }
+}
