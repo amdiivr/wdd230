@@ -1,4 +1,4 @@
-@media only screen and (min-width: 280px) and (max-width: 425px){
+@media only screen and (min-width: 125px) and (max-width: 425px){
     /* NAV LARGE DESIGN */ 
 
     nav {
@@ -72,44 +72,14 @@
     /* MAIN LARGE DESIGN */
     main {
         width: 100%;
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    #event {
+    #secondPart, #overall, #thirdPart  {
         grid-column: 1 / 2;
-        grid-row: 1 / 2;
-        width: 90%;
-        height: 90%;
-    }
-    #weather {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        width: 90%;
-        height: 90%;
-    }
-    #join {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-        width: 90%;
-        height: 90%;
     }
     #hero {
-        grid-column: 1 / 2;
-        grid-row: 4 / 5;
-        width: 90%;
-        height: 90%;
-    }
-    #news {
-        grid-column: 1 / 2;
-        grid-row: 5 / 6;
-        width: 90%;
-        height: 90%;
-    }
-    #spotlight {
-        grid-column: 1 / 2;
-        grid-row: 6 / 7;
-        width: 90%;
-        height: 95%;
+        margin-bottom: 0;
     }
 
     /* FOOTER LARGE DESIGN */
