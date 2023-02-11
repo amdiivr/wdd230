@@ -149,6 +149,7 @@ main h2 {
     box-shadow: 0 0 10px #03045E;
 }
 #weather {
+    text-align: center;
     padding: 10px 10px;
     margin: 10px 10px;
     background-color: #0077B6;
@@ -164,7 +165,7 @@ main h2 {
     width: 20%;
 }
 #weather img {
-    width: 70%;
+    width: 50%;
 }
 #overall h2, h3, p {
     text-align: center;
