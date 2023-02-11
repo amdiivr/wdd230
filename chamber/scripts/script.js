@@ -32,7 +32,7 @@ let dayOfTheWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday",
 let day = new Date().getDay();
 let header = document.querySelector("header");
 
-if (dayOfTheWeek[day] == "Monday" | dayOfTheWeek[day] == "Friday") {
+if (dayOfTheWeek[day] == "Monday" | dayOfTheWeek[day] == "Tuesday") {
     let alertBanner = document.createElement("div");
     alertBanner.innerHTML = "<span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>";
     let deleteButton = document.createElement("button");
