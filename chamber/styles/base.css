@@ -80,12 +80,13 @@ header, footer {
     margin-left: 16px;
 }
 #socialMedia img {
-    margin: 6px;
+    margin: 3px;
     border-radius: 50%;
     width: 30px;
     height: auto;
 }
 .date {
+    color: white;
     font-family: 'Crimson Text', serif;
     background-color: #0077B6;
     display: flex;
@@ -99,6 +100,7 @@ header, footer {
 /* MAIN SECTION */
 
 main {
+    color: white;
 	display: grid;
 	grid-template-columns: 25% 50% 25%; 
 	padding: 7px;
@@ -154,6 +156,7 @@ main h2 {
     justify-content: center;
 }
 #hero {
+    color: black;
     padding: 10px 10px;
     margin: 10px 10px;
     background-color: #0077B6;
