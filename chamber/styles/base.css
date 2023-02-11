@@ -97,6 +97,30 @@ header, footer {
     border-bottom: 1px solid #023E8A;
 }
 
+.alert {
+    color: white;
+    font-size: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 30px;
+    background-color: #0077B6;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+.alert > button {
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+.alert > span {
+    margin: 0 100px;
+}
+
+
 /* MAIN SECTION */
 
 main {

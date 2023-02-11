@@ -41,6 +41,9 @@
     .responsive #menu::before {
         content: "≡";
     }
+    .alert {
+        display: none;
+    }
 
     /* MAIN LARGE DESIGN */
 

@@ -25,3 +25,22 @@ document.querySelector("#year").innerHTML = year;
 
 let lastUpdate = new Date(document.lastModified);
 document.querySelector("#currentDate").innerHTML = lastUpdate;
+
+// ALERT ACTUALLY
+
+let dayOfTheWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+let day = new Date().getDay();
+let header = document.querySelector("header");
+
+if (dayOfTheWeek[day] == "Monday" | dayOfTheWeek[day] == "Friday") {
+    let alertBanner = document.createElement("div");
+    alertBanner.innerHTML = "<span>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</span>";
+    let deleteButton = document.createElement("button");
+    deleteButton.innerHTML = "✘";
+    alertBanner.appendChild(deleteButton);
+    alertBanner.classList.add("alert");
+    header.prepend(alertBanner);
+    deleteButton.addEventListener("click", () => {
+        alertBanner.remove();    
+});
+}

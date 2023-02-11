@@ -41,6 +41,9 @@
     .responsive #menu::before {
         content: "≡";
     }
+    .alert {
+        display: none;
+    }
 
     /* LOGO AND H1 LARGE DESIGN */
 
