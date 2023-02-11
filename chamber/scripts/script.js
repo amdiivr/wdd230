@@ -28,9 +28,10 @@ document.querySelector("#currentDate").innerHTML = lastUpdate;
 
 // ALERT ACTUALLY
 
-let dayOfTheWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 let day = new Date().getDay();
 let header = document.querySelector("header");
+
+let dayOfTheWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 if (dayOfTheWeek[day] == "Monday" | dayOfTheWeek[day] == "Tuesday") {
     let alertBanner = document.createElement("div");
