@@ -33,8 +33,8 @@ header, footer {
 }
 #head img {
     border-radius: 50%;
-    width: 100px;
-    height: auto;
+    width: 80px;
+    height: 80px;
 }
 #head section {
     display: flex;
@@ -83,7 +83,7 @@ header, footer {
     margin: 3px;
     border-radius: 50%;
     width: 30px;
-    height: auto;
+    height: 30px;
 }
 .date {
     color: white;
@@ -162,10 +162,12 @@ main h2 {
     box-shadow: 0 0 10px #03045E;
 }
 #event img {
-    width: 20%;
+    width: 50px;
+    height: 50px;
 }
 #weather img {
-    width: 50%;
+    width: 50px;
+    height: 50px;
 }
 #overall h2, h3, p {
     text-align: center;
@@ -199,6 +201,7 @@ main h2 {
 }
 #secondPart img {
     width: 100%;
+    height: 100%;
 }
 #secondPart h2, p {
     text-align: center;
@@ -232,7 +235,8 @@ main h2 {
     box-shadow: 0 0 10px #03045E;
 }
 #thirdPart img{
-    width: 25%;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-items: center;
     margin-top: 3px;
@@ -261,8 +265,8 @@ footer {
     float: left;
     margin-right: 15px;
     border-radius: 50%;
-    width: 140px;
-    height: auto;
+    width: 100px;
+    height: 100px;
 }
 #mapLocation {
     grid-column: 2 / 3;
@@ -277,7 +281,7 @@ footer {
     margin-right: 15px;
     border-radius: 50%;
     width: 30px;
-    height: auto;
+    height: 30px;
 }
 #final {
     grid-column: 1 / 3;

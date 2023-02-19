@@ -46,15 +46,15 @@
         <div id="overall">
             <section id="event">
                 <h2>Ribbon Cutting</h2>
-                <h3><img src="images/mando.png" alt="logo Controller"> GameStore</h3>
+                <h3><img src="images/game-2.png" alt="logo Controller"> GameStore</h3>
                 <p>Join us for the grand opening of
                     The Diamond Shack, Thursday
                     at 1:00 p.m. more info...</p>
             </section>
             <section id="weather">
                 <h2>Weather</h2>
-                <h4></h4><img src="images/weather.png" alt="weather logo">
-                <span id="temperature"></span> &#xb0;F</h4>
+                <img src="images/weather.png" alt="weather logo">
+                <span id="temperature"></span>&#xb0;F
                 <hr>
                 <span id="infoWeather">Partly Cloudy</span>
                 <hr>
@@ -71,7 +71,11 @@
             <section id="hero">
                 <h2>Welcome to Augustinian!</h2>
                 <!-- <img src="images/agustinian.jpg" alt="Augustinian Place"> -->
-                <img src="images/wdd230-org.webp" srcset="images/wdd230-org.webp 990w, images/wdd230-org.webp 1000w, images/wdd230-org.webp 400w">
+                <picture>
+                    <source media="(max-width: 940px)" srcset="images/wdd230-org.webp">
+                    <source media="(max-width: 425px)" srcset="images/wdd230-org.webp">
+                    <img src="images/wdd230-org.webp" alt="People talk about administration">
+                </picture>
             </section>
             <section id="news">
                <h2>News Release</h2>
@@ -82,43 +86,38 @@
             <section id="spotlight">
                <div id="spot1">
                   <h2>Tech Support</h2>
-                  <img src="images/techsupportlogo.png" alt="techSupport logo">
-                  <p><hr>info: tech@support.com</p>
+                  <img src="images/technical-support-2.png" alt="techSupport logo">
+                  <hr><p>info: tech@support.com</p>
               </div>
               <div id="spot2">
                   <h2>Painting Service</h2>
-                  <img src="images/paintinglogo.jpg" alt="Painting Logo">
-                  <p><hr>info: painting@service.com</p>
+                  <img src="images/house-painting-2.png" alt="Painting Logo">
+                  <hr><p>info: painting@service.com</p>
               </div>
               <div id="spot3">
                   <h2>Instant Delivery</h2>
-                  <img src="images/deliverylogo.jpg" alt="Delivery Logo">
-                  <p><hr>info: instant@delivery.com</p>
+                  <img src="images/scooter-2.png" alt="Delivery Logo">
+                  <hr><p>info: instant@delivery.com</p>
               </div>
             </section>
         </div>   
     </main>
     <footer>
         <section id="picture">
-            <img src="images/acocLogo.png" alt="Chamber Logo">
+            <h2><img src="images/acocLogo.png" alt="Chamber Logo"></h2>
             <aside><h2>Augustinian Chamber of commerce</h2><br>Av. Las Esmeraldas<br>#1056, Lima - El Agustino</aside>
         </section>
         <section id="mapLocation">
-            <p>info@augustinian.org<br>+51 013852700</p>
+            <h3>info@augustinian.org<br>+51 013852700</h3>
             <div>
-                <picture>
                 <a href="https://www.google.com/maps/place/Plaza+Norte/@-12.0062293,-77.0692554,15z/data=!4m5!3m4!1s0x9105ce300d8854e1:0x6a1b58f36fcc79a6!8m2!3d-12.0062301!4d-77.0605008" target="_blank"><img src="images/location.png" alt="Location Logo"></a>
-                </picture>
                 <p>Location Map</p>
             </div>
-        
         </section>
-        <section id="final">
-            <div id="finalInfo">
-                <hr>
-                <p>&copy;<span id="year"></span> Augustinian Chamber | Andy C. Vasquez Rueda | WDD 230 Project | <br> Modification: <span id="currentDate"></span></p>
-            </div>
-        </section>
+        <div id="final">
+            <hr>
+            <p>&copy;<span id="year"></span> Augustinian Chamber | Andy C. Vasquez Rueda | WDD 230 Project | <br> Modification: <span id="currentDate"></span></p>
+        </div>
     </footer>
     <script src="scripts/script.js"></script>
 </body>

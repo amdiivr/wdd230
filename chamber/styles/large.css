@@ -104,7 +104,7 @@
         margin: 0 auto;
     }
     #picture img{
-        padding: auto;
+        padding: 0;
         margin: 0 auto;
         border-radius: 50%;
         width: 90px;
