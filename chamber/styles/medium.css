@@ -61,4 +61,10 @@
     #thirdPart {
         grid-column: 1 / 3;
     }
+
+    /* CSS MEDIUM DISCOVER PAGE */
+    #discover {
+        background-color: #0077B6;
+        grid-column: 1 / 3;
+    }
 }

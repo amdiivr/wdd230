@@ -58,3 +58,4 @@ function CalculateWindChill(speed, temp) {
 document.querySelector("#temperature").textContent = temperature;
 document.querySelector("#speedWind").textContent = windSpeed;
 document.querySelector("#chillWind").textContent = CalculateWindChill(windSpeed, temperature).toFixed(1);
+

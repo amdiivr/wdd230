@@ -85,6 +85,12 @@
         margin-bottom: 0;
     }
 
+    /* CSS DISCOVER LARGE STYLE*/
+    #discover {
+        background-color: #0077B6;
+        grid-column: 1/2;
+    }
+
     /* FOOTER LARGE DESIGN */
 
     footer {
