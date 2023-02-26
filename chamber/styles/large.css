@@ -53,7 +53,8 @@
     }
     #head img {
         margin-left: auto;
-        width: 100%;
+        width: 69px;
+        height: 69px;
     }
     #head section h1{
         font-size: 32px;
@@ -69,7 +70,8 @@
     }
     #socialMedia img {
         margin: auto;
-        width: 100%;
+        width: 28px;
+        height: 28px;
     }
 
     /* MAIN LARGE DESIGN */

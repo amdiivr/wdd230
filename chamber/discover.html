@@ -48,29 +48,34 @@
             <h1>Tourist Place</h1>
             <div id="placesPhotos">
                 <picture>
-                    <img src="images/loading.jpg" data-src ="images/catedral.jpg" width="400" height="400" alt="Photo to the place call Catedral">
-                    <p>This is the city's cathedral, where religious events are held among the catholic people, its construction is as old as the city.</p>
+                    <img src="images/loading.webp" data-src ="images/catedral.jpg" width="375" height="250" alt="Photo to the place call Catedral">
                 </picture>
+                <p>This is the city's cathedral, where religious events are held among the catholic people, its construction is as old as the city.</p>
                 <picture>
-                    <img src="images/loading.jpg" data-src ="images/jironDeLaUnion.jpg" width="400" height="400" alt="Photo to the Jiron de la Union">
-                    <p>Jirón de la Unión is a street where several commercial stores join and it is very wide so that several people can visit it.</p>
+                    <img src="images/loading.webp" data-src ="images/jironDeLaUnion.jpg" width="300" height="175" alt="Photo to the Jiron de la Union">                   
                 </picture>
+                <p>Jirón de la Unión is a street where several commercial stores join and it is very wide so that several people can visit it.</p>
                 <picture>
-                    <img src="images/loading.jpg" data-src ="images/palacioDeGobierno.jpg" width="400" height="400" alt="Photo to the government palace">
-                    <p>The government palace is where the president of Peru spends most of his time there, also the construction has been intact for several years as the old city.</p>
+                    <img src="images/loading.webp" data-src ="images/palacioDeGobierno.jpg" width="375" height="250" alt="Photo to the government palace">
                 </picture>
+                <p>The government palace is where the president of Peru spends most of his time there, also the construction has been intact for several years as the old city.</p>
                 <picture>
-                    <img src="images/loading.jpg" data-src ="images/paraderoDeMototaxi.jpg" width="400" height="400" alt="Photo to the mototaxi whereabouts">
-                    <p>The classic motorcycle taxi whereabouts is the usual when transporting you through the city, it is not the only transport but it is the best known and fastest.</p>
+                    <img src="images/loading.webp" data-src ="images/paraderoDeMototaxi.jpg" width="350" height="334" alt="Photo to the mototaxi whereabouts">
                 </picture>
+                <p>The classic motorcycle taxi whereabouts is the usual when transporting you through the city, it is not the only transport but it is the best known and fastest.</p>
                 <picture>
-                    <img src="images/loading.jpg" data-src ="images/playaCostaVerde.jpg" width="400" height="400" alt="Photo of the green coast beach">
-                    <p>The green coast beach is very close to the city, we also see how it surrounds the emblematic cities within the Augustinian Chamber of Commerce.</p>
+                    <img src="images/loading.webp" data-src ="images/playaCostaVerde.jpg" width="325" height="310" alt="Photo of the green coast beach">
                 </picture>
+                <p>The green coast beach is very close to the city, we also see how it surrounds the emblematic cities within the Augustinian Chamber of Commerce.</p>
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="dicoverFooter">
+        <div id="visited">
+            <p><span class="label">Number of visits: "</span><span id="visits"></span>"
+            </p>
+            <p><span id="today"></span></p>
+        </div>
         <section id="picture">
             <h2><img src="images/acocLogo.png" alt="Chamber Logo"></h2>
             <aside><h2>Augustinian Chamber of commerce</h2><br>Av. Las Esmeraldas<br>#1056, Lima - El Agustino</aside>
@@ -89,5 +94,6 @@
     </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/lazyLoad.js"></script>
+    <script src="scripts/visited.js"></script>
 </body>
 </html>
