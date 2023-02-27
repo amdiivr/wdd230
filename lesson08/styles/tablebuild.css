@@ -1,0 +1,49 @@
+:root {
+    --foredark: hsla(0,0%,10%,1);
+    --forelight: hsla(0,0%,100%,1);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,33%);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%);
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    box-shadow: 0 0 7px var(--shadow);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--foredark);
+    font-size: 15px;
+}
+
+tr:first-child th {
+    background-color: var(--foredark);
+    color: var(--forelight);
+}
+tr:nth-child(2) {
+    color: var(--forelight);
+}
+
+th, td {
+    padding: 7px 15px;
+    border: 1px solid var(--foredark);
+}
+
+th {
+    background-color: var(--foredark);
+    font-size: large;
+}
+
+td {
+    text-align: center;
+    color: var(--foredark);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
