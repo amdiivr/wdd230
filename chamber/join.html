@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover | Augustinian Chamber</title>
+    <title>Join | Augustinian Chamber</title>
     <meta name="description" content="The discover site shows tourist places of the chamber of commerce, as well as some references to why these places are known and popular by citizens.">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
@@ -43,38 +43,64 @@
     </header>
     <div class="date"></div>
     <main>
-        <section id="discover">
-            <h1>Tourist Place</h1>
-            <div id="placesPhotos">
-                <picture>
-                    <img src="images/loading.webp" data-src ="images/catedral.jpg" width="375" height="250" alt="Photo to the place call Catedral">
-                </picture>
-                <p>This is the city's cathedral, where religious events are held among the catholic people, its construction is as old as the city.</p>
-                <picture>
-                    <img src="images/loading.webp" data-src ="images/jironDeLaUnion.jpg" width="300" height="175" alt="Photo to the Jiron de la Union">                   
-                </picture>
-                <p>Jirón de la Unión is a street where several commercial stores join and it is very wide so that several people can visit it.</p>
-                <picture>
-                    <img src="images/loading.webp" data-src ="images/palacioDeGobierno.jpg" width="375" height="250" alt="Photo to the government palace">
-                </picture>
-                <p>The government palace is where the president of Peru spends most of his time there, also the construction has been intact for several years as the old city.</p>
-                <picture>
-                    <img src="images/loading.webp" data-src ="images/paraderoDeMototaxi.jpg" width="350" height="334" alt="Photo to the mototaxi whereabouts">
-                </picture>
-                <p>The classic motorcycle taxi whereabouts is the usual when transporting you through the city, it is not the only transport but it is the best known and fastest.</p>
-                <picture>
-                    <img src="images/loading.webp" data-src ="images/playaCostaVerde.jpg" width="325" height="310" alt="Photo of the green coast beach">
-                </picture>
-                <p>The green coast beach is very close to the city, we also see how it surrounds the emblematic cities within the Augustinian Chamber of Commerce.</p>
-            </div>
-        </section>
+        <form id="joinForm" method="get" action="thanks.html">
+            <label>
+                First Name*
+                <input type="text" name="firstName" required autofocus>
+            </label>
+            <label>
+                Last Name*
+                <input type="text" name="LastName" required>
+            </label>
+            <label>
+                Business Name*
+                <input type="text" name="businessName" required>
+            </label>
+            <label>
+                Business Title*
+                <input type="text" name="businessT" id="position" minlength="7" pattern="^[a-zA-Z\s\-]{7,}">
+            </label>
+            <label>
+                Cell Phone
+                <input type="tel" name="cellPhone"  required minlength="4" maxlength="14" pattern="[0,9.\-\(\) ]*">
+            </label>
+            <label>
+                Email*
+                <input type="email" name="Email" placeholder="example@domain.com
+                " required autofocus>
+            </label>
+            <label>
+                Website*
+                <input type="url" name="url" required autofocus>
+            </label>
+       
+        <fieldset id="selectionMembership">
+                <legend>Membership</legend>
+            <label class="informationM">
+                <input type="radio" name="membership" value="npMembership" title="no membership">
+                Non Profit (Free)
+            </label>
+            <label class="informationM">
+                <input type="radio" name="membership" value="bronzeM" title="basic subscription">
+                Bronze ($25 Annual)
+            </label>
+            <label class="informationM">
+                <input type="radio" name="membership" value="silverM" title="silver subscription">
+                Silver ($35 Annual)
+            </label>
+            <label class="informationM">
+                <input type="radio" name="membership" value="goldM" title="gold subscription">
+                Gold ($45 annual)
+            </label>
+        </fieldset>
+        <fieldset id="moreDescription">
+            <legend>More Description</legend>
+            <textarea name="details" id="details" cols="40" rows="5"></textarea>
+        </fieldset>
+        <input type="submit" value="Submit Membership" class="submitBtn">
+    </form>
     </main>
     <footer id="dicoverFooter">
-        <div id="visited">
-            <p><span class="label">Number of visits: "</span><span id="visits"></span>"
-            </p>
-            <p><span id="today"></span></p>
-        </div>
         <section id="picture">
             <h2><img src="images/acocLogo.png" alt="Chamber Logo"></h2>
             <aside><h2>Augustinian Chamber of commerce</h2><br>Av. Las Esmeraldas<br>#1056, Lima - El Agustino</aside>
@@ -93,6 +119,5 @@
     </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/lazyLoad.js"></script>
-    <script src="scripts/visited.js"></script>
 </body>
 </html>
