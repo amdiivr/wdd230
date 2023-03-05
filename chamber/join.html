@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join | Augustinian Chamber</title>
-    <meta name="description" content="The discover site shows tourist places of the chamber of commerce, as well as some references to why these places are known and popular by citizens.">
+    <meta name="description" content="The join site shows how the user can interact through forms directly with the website, also provides benefits according to the subscription you choose.">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -43,6 +43,68 @@
     </header>
     <div class="date"></div>
     <main>
+        <table>
+            <caption>Details Membership</caption>
+            <thead>
+                <tr>
+                    <th colspan="4" scope="colgroup">Membership</th>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <th scope="col">Newsletter</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Non-Profit</th>
+                    <td>
+                        Events
+                        <br>
+                        Activities
+                    </td>
+                    <td>Undetermined</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <th scope="row">Bronze</th>
+                    <td>
+                        Events
+                        <br>
+                        Activities
+                        <br>
+                        1 time/month 
+                    </td>
+                    <td>Annual</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <th scope="row">Silver</th>
+                    <td>
+                        Events
+                        <br>
+                        Activities
+                        <br>
+                        1 time/week
+                    </td>
+                    <td>Annual</td>
+                    <td>$35</td>
+                </tr>
+                <tr>
+                    <th scope="row">Gold</th>
+                    <td>
+                        Events
+                        <br>
+                        Activities
+                        <br>
+                        Daily
+                    </td>
+                    <td>Annual</td>
+                    <td>$50</td>
+                </tr>
+            </tbody>
+        </table>
         <form id="joinForm" method="get" action="thanks.html">
             <label>
                 First Name*
@@ -66,36 +128,36 @@
             </label>
             <label>
                 Email*
-                <input type="email" name="Email" placeholder="example@domain.com
-                " required autofocus>
+                <input type="email" name="email" placeholder="example@domain.com">
             </label>
             <label>
                 Website*
-                <input type="url" name="url" required autofocus>
+                <input type="url" name="url">
             </label>
        
         <fieldset id="selectionMembership">
                 <legend>Membership</legend>
             <label class="informationM">
                 <input type="radio" name="membership" value="npMembership" title="no membership">
-                Non Profit (Free)
+                Non Profit
             </label>
             <label class="informationM">
                 <input type="radio" name="membership" value="bronzeM" title="basic subscription">
-                Bronze ($25 Annual)
+                Bronze 
             </label>
             <label class="informationM">
                 <input type="radio" name="membership" value="silverM" title="silver subscription">
-                Silver ($35 Annual)
+                Silver
             </label>
             <label class="informationM">
                 <input type="radio" name="membership" value="goldM" title="gold subscription">
-                Gold ($45 annual)
+                Gold
             </label>
         </fieldset>
         <fieldset id="moreDescription">
             <legend>More Description</legend>
-            <textarea name="details" id="details" cols="40" rows="5"></textarea>
+            <label for="details">Details</label>
+            <textarea name="details" id="details" cols="50" rows="7"></textarea>
         </fieldset>
         <input type="submit" value="Submit Membership" class="submitBtn">
     </form>

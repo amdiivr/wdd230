@@ -281,6 +281,7 @@ hr {
     margin: 15px 10px;
 }
 #joinForm label {
+    text-align: center;
     padding: 5px 10px;
     font-size: 15px;
 }
@@ -292,24 +293,24 @@ hr {
 }
 #joinForm input {
     border-radius: 5px;
-    width: 410px;
-    height: 30px;
+    width: 100%;
+    height: 40px;
 }
 #selectionMembership {
     /* background-color: #0077B6;
-    grid-column: 3 / 4;
+    grid-column: 3 / 4;*/
     display: flex;
-    flex-direction: column; */
+    flex-direction: row;
     box-shadow: 15px 15px 30px #03045E;
     border: 1px solid #023E8A;
     border-radius: 10px;
     margin: 15px 10px;
     text-align: center;
 }
-/* #selectionMembership label {
-    padding: 5px 10px;
-    font-size: 15px;
-} */
+#selectionMembership input {
+    width: 100%;
+    height: 25px;
+}
 #moreDescription {
     /* background-color: #0077B6; */
     /* grid-column: 2 / 3; */
@@ -339,6 +340,28 @@ hr {
     padding: 5px;
     margin-bottom: 5px;
 } */
+
+table {
+    margin: 10px auto;
+    border-collapse: collapse;
+    background-color: #0077B6;
+    grid-column: 2 / 3;
+    box-shadow: 15px 25px 30px #03045E;
+    border: 2px solid #023E8A;
+}
+table caption {
+    display: none;
+}
+
+thead tr:first-child, tr:nth-child(2) {
+    background-color: #03045E;
+}
+
+
+th, td {
+    padding: 7px 15px;
+    border: 1px solid black;
+}
 
 
 /* FOOTER DESIGN */
