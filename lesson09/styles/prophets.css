@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap');
+
+body {
+    font-family: 'Stardos Stencil', cursive;
+    text-align: center; 
+    background: url("https://images.alphacoders.com/107/107763.jpg");
+    color: white;
+}
+
+h1 {
+    color: WHITE;
+    border-bottom: 1px solid #eee;
+    text-shadow: 10px 10px 15px #777;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div {
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    padding-top: 25px;
+    margin-top: 15px;
+}
+
+img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+}
+
+@media only screen and (min-width: 125px) and (max-width: 760px) {
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
