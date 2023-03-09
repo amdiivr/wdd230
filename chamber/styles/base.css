@@ -363,6 +363,96 @@ th, td {
     border: 1px solid black;
 }
 
+/* DIRECTORY MAIN PAGE */
+
+#directoryMenu {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+#stores {
+    display: grid;
+    width: 100%;
+    padding: 1em;
+    gap: .5em;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 345px);
+}
+#stores > div {
+    padding: 1em;
+    background-color: #023E8A;
+    display: flex;
+    border: 1px solid black; 
+    border-radius: .5em;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.buttonGroup > .buttonGroup.selected {
+    transform: scale(1.1);
+}
+
+/*List view */
+
+#stores.listView {
+    background-color: #023E8A;
+    display: flex;
+    flex-direction: column;
+}
+#stores.listView > div.card {
+    position: relative;
+    flex-direction: column;
+    align-items:start;
+    flex-wrap: wrap;
+    background-color: unset;
+    border: 0;
+    border-radius: 0;
+}
+#stores.listView > div.card > div {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#stores.listView > div.card > div:nth-child(2) {
+    width: 12em;
+  
+}
+#stores.listView > div.card > div:nth-child(3) {
+    width: 8em;
+}
+#stores.listView > div.card > div:nth-child(4) {
+    width: auto;
+    max-width: 100%;
+}
+#stores.listView > div.card:nth-child(odd) {
+    background-color: var(--drop-shadows);
+}
+
+#stores.listView > div > img {
+    display: none;
+}
+/*end list view */
+
+#directoryMenu > div.backdrop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttonGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.buttonGroup > button:hover {
+    transform: scale(1.15);
+    transition: transform 1s;
+    text-shadow: 1px 1px 6px #0077B6;
+}
+.buttonGroup > button {
+    transform: scale(1);
+    transition: transform .5s;
+}
 
 /* FOOTER DESIGN */
 
