@@ -105,14 +105,14 @@
                 </tr>
             </tbody>
         </table>
-        <form id="joinForm" method="get" action="thanks.html">
+        <form id="joinForm" method="get" action="thankyou.html">
             <label>
                 First Name*
                 <input type="text" name="firstName" required autofocus>
             </label>
             <label>
                 Last Name*
-                <input type="text" name="LastName" required>
+                <input type="text" name="lastName" required>
             </label>
             <label>
                 Business Name*
@@ -120,21 +120,20 @@
             </label>
             <label>
                 Business Title*
-                <input type="text" name="businessT" id="position" minlength="7" pattern="^[a-zA-Z\s\-]{7,}">
+                <input type="text" name="businessT" id="position" minlength="7" pattern="^[a-zA-Z- ]{7,}">
             </label>
             <label>
                 Cell Phone
-                <input type="tel" name="cellPhone"  required minlength="4" maxlength="14" pattern="[0,9.\-\(\) ]*">
+                <input type="tel" name="phone"  required minlength="4" maxlength="14" pattern="[0-9.\-\(\) ]*">
             </label>
             <label>
                 Email*
-                <input type="email" name="email" placeholder="example@domain.com">
+                <input type="email" name="email" required placeholder="example@domain.com">
             </label>
             <label>
                 Website*
                 <input type="url" name="url">
             </label>
-       
         <fieldset id="selectionMembership">
                 <legend>Membership</legend>
             <label class="informationM">
@@ -159,7 +158,7 @@
             <label for="details">Details</label>
             <textarea name="details" id="details" cols="50" rows="7"></textarea>
         </fieldset>
-        <input type="submit" value="Submit Membership" class="submitBtn">
+        <input type="submit" name="submit" value="Submit Membership" class="submitBtn">
     </form>
     </main>
     <footer id="dicoverFooter">

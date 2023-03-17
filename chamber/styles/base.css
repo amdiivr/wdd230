@@ -454,6 +454,28 @@ th, td {
     transition: transform .5s;
 }
 
+/* thanks.html page */
+
+#thanks {
+    grid-column: 1 / 4;
+    width: 100%;
+    text-align: center;
+    background-color: #023E8A;
+}
+
+#thanks img {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#thanks h1 {
+    font-size: 50px;
+    color: #03045E;
+    padding: 40px;
+    position: absolute;
+}
+
 /* FOOTER DESIGN */
 
 footer {
