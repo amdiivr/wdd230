@@ -24,9 +24,9 @@ const displayStore = (stores) => {
 
         portrait.setAttribute("src", store.img);
         portrait.setAttribute("alt", `Portrait of ${store.name}`);
-        portrait.setAttribute("loading", "lazy");
-        portrait.setAttribute("width", "350");
-        portrait.setAttribute("height", "300")
+        // portrait.setAttribute("loading", "lazy");
+        portrait.setAttribute("width", "340");
+        portrait.setAttribute("height", "340")
 
         card.appendChild(portrait);
         card.appendChild(name);

@@ -93,6 +93,21 @@
         grid-column: 1/2;
     }
 
+    /* DIRECTORY PAGE LARGE */
+    
+    #directoryMenu {
+        grid-column: 1/2;
+    }
+    #stores {
+        display: block;  
+    }
+
+    /* JOIN PAGE */
+
+    #joinForm {
+        display: block;
+    }
+
     /* FOOTER LARGE DESIGN */
 
     footer {

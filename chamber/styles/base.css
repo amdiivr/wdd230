@@ -367,7 +367,6 @@ th, td {
 
 #directoryMenu {
     grid-column: 1/4;
-    grid-row: 3/4;
 }
 #stores {
     display: grid;
@@ -375,7 +374,7 @@ th, td {
     padding: 1em;
     gap: .5em;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 345px);
+    grid-template-columns: repeat(auto-fit, 380px);
 }
 #stores > div {
     padding: 1em;
@@ -389,6 +388,9 @@ th, td {
 }
 .buttonGroup > .buttonGroup.selected {
     transform: scale(1.1);
+}
+#stores img {
+    padding: 20px;
 }
 
 /*List view */
@@ -416,7 +418,6 @@ th, td {
 }
 #stores.listView > div.card > div:nth-child(2) {
     width: 12em;
-  
 }
 #stores.listView > div.card > div:nth-child(3) {
     width: 8em;
