@@ -161,6 +161,10 @@ main h2 {
     background-color: #0077B6;
     box-shadow: 0 0 10px #03045E;
 }
+#join a {
+    text-decoration: none;
+    color: white;
+}
 #event img {
     width: 50px;
     height: 50px;
@@ -475,6 +479,51 @@ th, td {
     color: #03045E;
     padding: 40px;
     position: absolute;
+}
+
+/* CONTACT PAGE */
+
+#contactForm {
+    background-color: #0077B6;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 15px 25px 30px #03045E;
+    border: 1px solid #023E8A;
+    border-radius: 10px;
+    margin: 15px 10px;
+    padding: 10px;
+}
+
+#contactForm input{
+    width: 100%;
+}
+
+#fondo {
+    box-shadow: 15px 25px 30px #03045E;
+    border: 1px solid #023E8A;
+    border-radius: 10px;
+    margin: 10px auto;
+    grid-column: 2 / 3;
+    background-color: #0077B6;
+    width: 100%;
+    padding: 10px;
+}
+
+#contact {
+    box-shadow: 15px 25px 30px #03045E;
+    border: 1px solid #023E8A;
+    border-radius: 10px;
+    grid-column: 1 / 2;
+    text-align: center;
+    background-color: #0077B6;
+    margin: 5px;
+    padding: 5px;
+}
+
+#contact h3, a {
+    
+    color: white;
 }
 
 /* FOOTER DESIGN */

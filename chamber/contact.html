@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Augustinian Chamber</title>
-    <meta name="description" content="The directory page of the Augustinian Chamber of Commerce will show the complete content, dynamic actions to navigate within the website and social networks for greater contact with the general public.">
+    <title>Contact | Augustinian Chamber</title>
+    <meta name="description" content="The contact page allows the user to communicate with the chamber of commerce and place their business within the website while having more knowledge about everything that happens within the website.">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -43,16 +43,36 @@
     </header>
     <div class="date"></div>
     <main>
-        <div id="directoryMenu">
-            <div class="backdrop"></div>
-            <div class = buttonGroup>
-                <button id="gridView">⏹️Grid</button>
-                <button id="listView">📄List</button>
-            </div>
-            <div id="stores"></div>
+        <div id="contact">
+                <h2>Contact Info</h2>
+                <h3>Address</h3>
+                Av. Panamericana Nte, San Martin de Porres 15311
+                <h3>Phone</h3>
+                (+51)385-2700
+                <h3>email</h3>
+                <a href="mailto:agustian@agustianbusiness.com">agustian@<wbr>agustian<wbr>business<wbr>.com</a>
+                <h3>Office Hours</h3>
+                MON-FRI, 9AM-8PM
         </div>
+        <img id="fondo" src="images/agustinian.jpg" alt="Augustinian Place">
+        <form id="contactForm" method="get" action="thankyouContact.html">
+            <h1>Leave a Comment</h1>
+            <label>
+                Name:
+                <input type="text" name="firstName" required autofocus>
+            </label>
+            <label>
+                Email:
+                <input type="email" name="email" required placeholder="example@domain.com">
+            </label>
+            <label>
+                Comment:
+                <textarea name="details" id="details" cols="50" rows="7"></textarea>
+            </label>
+            <input type="submit" value="Send form">
+        </form>
     </main>
-    <footer>
+    <footer id="dicoverFooter">
         <section id="picture">
             <h2><img src="images/acocLogo.png" alt="Chamber Logo"></h2>
             <aside><h2>Augustinian Chamber of commerce</h2><br>Av. Las Esmeraldas<br>#1056, Lima - El Agustino</aside>
@@ -70,6 +90,5 @@
         </div>
     </footer>
     <script src="scripts/script.js"></script>
-    <script src="scripts/stores.js"></script>
 </body>
 </html>
