@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful | Fresh </title>
+    <meta name="description" content="The Fresh page is defined to display a form where user information will be requested in order to create a new healthy drink.">
+    <link rel="shortcut icon" href="images/BountifulIcon.ico">
+    <link rel="stylesheet" href="styles/bountifulBase.css">
+    <link rel="stylesheet" href="styles/bountifulMedium.css">
+    <link rel="stylesheet" href="styles/bountifulLarge.css">
+</head>
+<body>
+     <header>
+        <div id="head">
+            <picture>
+                <img src="images/BountifulLogo.png" alt="Bountiful logo">
+            </picture>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a id="menu"></a></li>
+                <li><a href="bountiful.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div id="socialMedia">
+            <a href="http://facebook.com" target="_blank">
+                <img class="social" src="images/facebook.png" alt="Facebook Logo">
+            </a>
+            <a href="http://linkedin.com" target="_blank">
+                <img class="social" src="images/linkedin.png" alt="Linkedin Logo">
+            </a>
+            <a href="http://Twitter.com" target="_blank">
+                <img class="social" src="images/twitter.png" alt="Twitter Logo">
+            </a>
+        </div>
+     </header>
+     <main>
+        <form id="drink-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        
+            <label for="fruit-1">Fruit 1:</label>
+            <select id="fruit-1" name="fruit-1" required>
+            </select>
+        
+            <label for="fruit-2">Fruit 2:</label>
+            <select id="fruit-2" name="fruit-2" required>
+            </select>
+        
+            <label for="fruit-3">Fruit 3:</label>
+            <select id="fruit-3" name="fruit-3" required>
+            </select>
+        
+            <label for="special-instructions">Special Instructions:</label>
+            <textarea id="special-instructions" name="special-instructions"></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+        
+          <div id="output"></div>
+     </main>
+     <footer>
+        <section id="picture">
+            <img src="images/BountifulLogo.png" alt="Bountiful Logo">
+        </section>
+        <section id="location">
+            <h3>bountiful.org<br>+51 936285809</h3>
+            <div>
+                <h3><a href="https://www.google.com/maps/place/Jockey+Plaza/@-12.085336,-76.9816394,17z/data=!4m14!1m7!3m6!1s0x9105c79f5dacafbf:0x2aecf92fd4325f0d!2sJockey+Plaza!8m2!3d-12.0853413!4d-76.9794507!16s%2Fg%2F11fhws7zdk!3m5!1s0x9105c79f5dacafbf:0x2aecf92fd4325f0d!8m2!3d-12.0853413!4d-76.9794507!16s%2Fg%2F11fhws7zdk"><img src="images/location.png" alt="Location Activity"></a>
+                Location Map</h3>
+            </div>
+        </section>
+        <div id="finalFooter">
+            <hr>
+            <p>&copy;<span id="year"></span> Bountiful Foods | Andy C. Vasquez Rueda | WDD 230 Final Project | <br> Modification: <span id="currentDate"></span></p>
+        </div>
+     </footer>
+     <script src="scripts/bountiful.js"></script>
+     <script src="scripts/fruits.js"></script>
+</body>
+</html>

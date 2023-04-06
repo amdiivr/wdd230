@@ -1,0 +1,151 @@
+@media only screen and (min-width: 125px) and (max-width: 425px){
+    /* NAV LARGE DESIGN */
+    
+    nav {
+        margin: 0 auto;
+        background: #7AC143;
+        }
+    .navigation {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+        }
+    .navigation li:first-child {
+            display: block;
+        }
+    .navigation li {
+            display: none;
+        }
+    .navigation a {
+            display: block;
+            padding: 12px;
+            text-align: left;
+            text-decoration: none;
+            color: #F3F3F3;
+            font-weight: 700;
+            transition: 0.5s;
+            font-size: clamp(16px, 2vmin, 25px);
+        }
+    #menu::before {
+            content: "≡";
+            font-size: 32px;
+        }
+    .navigation a:hover, navigation a:active {
+            color: #F3F3F3;
+            background-color: #7AC143;
+        }
+    .responsive li {
+            display: block;
+        }
+    .responsive #menu::before {
+            content: "≡";
+        }
+    .alert {
+            display: none;
+        }
+
+    /* LOGO AND H1 LARGE DESIGN */
+
+        #socialMedia {
+            display: flex;
+            flex-direction: column;
+        }
+
+    /* MAIN LARGE DESIGN */
+
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: 1fr;
+    }
+
+    #secondPart, #overall, #thirdPart  {
+        grid-column: 1 / 2;
+        display: flex;
+        flex-direction: column;
+    }
+    #banner img{
+        height: 100%;
+    }
+    #banner h2 {
+        font-size: 20px;
+    }
+
+    #fresh img {
+        float: none;
+        width: 100%;
+        height: 50%;
+    }
+    #fresh h2 {
+        font-size: 20px;
+    }
+    #fresh aside { 
+        color: #7AC143;
+        font-size: 18px;
+        margin: 5px;
+        text-align: center;
+        padding-top: 10px;
+    }
+    #fresh a {
+        padding-top: 165px;
+        font-size: 18px; 
+    }
+    #drinks h2, h3{
+        font-size: 20px;
+    }
+    #summary h2, p {
+        font-size: 20px;
+    }
+    #weather h2, h3 span {
+        font-size: 20px;
+    }
+
+    /* FOOTER LARGE DESIGN */
+
+        footer {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 80% 20%;
+            display: flex;
+            flex-direction: column;
+        }
+        #picture {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        #picture img{
+            padding: 0;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 100px;
+            height: auto;
+        }
+        #location {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            display: flex;
+            width: 90%;
+            text-align: center;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        #location img {
+            margin: 0 auto;
+        }
+        #finalFooter {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+            display: flex;
+            width: 90%;
+            text-align: center;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+}
+
