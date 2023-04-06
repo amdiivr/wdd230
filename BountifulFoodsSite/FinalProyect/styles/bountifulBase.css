@@ -238,7 +238,7 @@ main {
 
 #output {
     background-color: #7AC143;
-    grid-row: inherit;
+    grid-row: 1 / 4;
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;
@@ -289,10 +289,14 @@ main {
     background-color: #7AC143;
     margin: 5px;
     padding: 5px;
+    color: white;
 }
 
-#contact h3, a {
+#contact h2, h3, a {
     
+    color: white;
+}
+#contactForm {
     color: white;
 }
 

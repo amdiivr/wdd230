@@ -102,6 +102,17 @@
         font-size: 20px;
     }
 
+    /* ABOUT US PAGE */
+    #contactForm {
+        grid-column: 2/3;
+    }
+    #fondo {
+        grid-column: 2 / 3;
+    }
+    #contact {
+        grid-column: 2 / 3;
+    }
+
     /* FOOTER LARGE DESIGN */
 
         footer {
